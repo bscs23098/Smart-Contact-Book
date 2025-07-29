@@ -22,7 +22,9 @@ int main(){
     obj.prefixSearch(ch);
     cout<<"\nAll Names:\n";
     obj.displayall();
-    if(obj.deleteIt("Zohair")){
+    string nm = "Zohair";
+    bool flag = obj.deleteIt(nm);
+    if(flag){
         cout<<"Is Deleted\n";
     }
     else {
